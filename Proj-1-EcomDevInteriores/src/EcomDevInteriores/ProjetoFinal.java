@@ -1,6 +1,7 @@
 package EcomDevInteriores;
 
 import java.util.InputMismatchException;
+import java.util.Locale;
 import java.util.Scanner;
 
 public class ProjetoFinal {
@@ -173,7 +174,7 @@ public class ProjetoFinal {
 			itensNoCarrinho();
 			System.out.print("\nDigite o código do produto a ser adicionado ao carrinho" + "\n"
 					+ "ou aperte '0' para encerrar compra: ");
-			codigoCompleto = leia.next().toUpperCase();
+			codigoCompleto = leia.next().toUpperCase(Locale.ROOT);
 
 			do {
 				for (int x = 0; x < 10; x++) {
